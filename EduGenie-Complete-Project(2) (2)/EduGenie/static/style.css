@@ -1,0 +1,176 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+    background: #f5f7fb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f5f7fb;
+}
+
+.container {
+    width: min(920px, 92%);
+    margin: 40px auto;
+}
+
+.hero {
+    margin-bottom: 22px;
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 0 8px;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(40px, 7vw, 68px);
+}
+
+.subtitle {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #5c667a;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e3e7ef;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 10px 35px rgba(20, 30, 50, 0.07);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.muted {
+    color: #667085;
+}
+
+label {
+    display: block;
+    margin: 20px 0 8px;
+    font-weight: 700;
+}
+
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #cfd6e4;
+    border-radius: 10px;
+    padding: 12px;
+    font: inherit;
+    background: white;
+}
+
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.12);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+button {
+    margin-top: 18px;
+    border: 0;
+    border-radius: 10px;
+    padding: 13px 22px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    background: #172033;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:disabled {
+    cursor: wait;
+    opacity: 0.6;
+}
+
+.result {
+    margin-top: 26px;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 24px;
+}
+
+#resultContent {
+    white-space: pre-wrap;
+    line-height: 1.65;
+}
+
+.quiz-question {
+    padding: 18px;
+    margin: 14px 0;
+    border: 1px solid #e1e5ed;
+    border-radius: 12px;
+    background: #fafbff;
+}
+
+.quiz-question h3 {
+    margin-top: 0;
+}
+
+.quiz-question li {
+    margin: 8px 0;
+}
+
+.status {
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 10px;
+    background: #f0f4ff;
+}
+
+.status.success {
+    background: #ecfdf3;
+}
+
+.status.error {
+    background: #fef2f2;
+    color: #b42318;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 20px 4px;
+    color: #7a8497;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGenie - AI Learning Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="hero">
+            <div>
+                <p class="eyebrow">GOOGLE GEMINI POWERED</p>
+                <h1>EduGenie</h1>
+                <p class="subtitle">Your AI-powered learning assistant</p>
+            </div>
+        </header>
+
+        <section class="card">
+            <h2>Learn with EduGenie</h2>
+            <p class="muted">Choose a task, enter your topic or passage, and get an AI-generated result.</p>
+
+            <form id="eduForm">
+                <label for="task">Task</label>
+                <select id="task" name="task">
+                    <option value="Explain">Explain a Concept</option>
+                    <option value="QnA">Question & Answer</option>
+                    <option value="Quiz">Generate Quiz</option>
+                    <option value="Summary">Summarize</option>
+                    <option value="Recommend Path">Learning Path</option>
+                </select>
+
+                <label for="user_input">Your input</label>
+                <textarea
+                    id="user_input"
+                    name="user_input"
+                    rows="9"
+                    placeholder="Example: Explain binary search in simple language..."
+                    required
+                ></textarea>
+
+                <button type="submit" id="submitBtn">Generate</button>
+            </form>
+
+            <div id="status" class="status hidden"></div>
+
+            <section id="resultSection" class="result hidden">
+                <h2>Result</h2>
+                <div id="resultContent"></div>
+            </section>
+        </section>
+
+        <footer>
+            <span>EduGenie</span>
+            <span>FastAPI + HTML/CSS + Google Gemini</span>
+        </footer>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
